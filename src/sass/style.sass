@@ -1,0 +1,285 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap')
+
+$green:#048C34
+$white:#F2F2F2
+$background-color:#F5F5F5
+$gray: #404040
+$black: #0D0D0D
+$white-font: 'Mplus 1p'
+@mixin green-line 
+    width: 100%
+    border: 2px solid $green
+.container
+    max-width: 1140px
+    margin: 0 auto
+.header
+    padding-top: 39px
+    height: 516px
+    background: linear-gradient(0deg, rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)),  url(../img/t.jpg)
+    background-position: center
+    background-size: cover
+    display: flex
+    justify-content: center
+    &_main-page
+        margin-bottom: 442px
+    &_supply-page
+        margin-bottom: 13px
+    &__logo
+        display: flex
+        justify-content: center
+        margin-bottom: 36px
+    &__info
+        text-align: center
+        font-family: $white-font
+        font-weight: 700
+    &__upper-line
+        @include green-line
+    &__main-text
+        display: flex
+        justify-content: center
+    &__h1
+        width: 812.03px
+        height: 172.74px
+        display: flex
+        align-items: center
+        text-align: center
+        color: $white
+        font-style: normal
+        font-size: 31px
+        line-height: 48px
+        text-transform: uppercase
+        margin-bottom: 24.29px
+    &__bottom-line
+        @include green-line
+        margin-bottom: 56px
+    &__contacts
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+    &__contact
+        display: flex
+        flex-direction: row
+        align-items: center
+        height: 46.17px
+    &__contact-icon
+        width: 43.43px
+        height: 46.17px
+        margin-right: 5.67px
+    &__phone-icon
+        width: 43.43px
+        height: 46.17px
+    &__mail-icon
+        width: 51.03px
+        height: 54.26px
+    &__h2
+        color: $white
+        font-size: 20px
+        font-style: normal
+        line-height: 30px
+        align: center
+.supply-program
+    display: flex
+    height: 426px
+    background: $gray
+    border: 1px solid #000000
+    align-self: flex-end
+    justify-content: center
+    align-items: center
+    &__nav
+        width: 773px
+        height: 378px
+        align-items: center
+    &__list
+        color: $white
+        font-family: Mplus 1p Bold
+        font-weight: 700
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        height: 100%
+    &__p
+        font-size: 24px
+        margin-bottom: 2px
+    &__a
+        font-size: 20px
+        color: $white
+        display: block
+        margin-bottom: 1px
+        &:last-child
+            margin-bottom: 0px
+    &__list:last-child
+        margin-bottom: 0px
+    li
+        margin-bottom: 15px
+.about-company
+    height: 309px
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    line-height: 28px
+    margin-bottom: 119px
+    &__hr
+        @include green-line
+        width:85%
+        color: $green
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__h1
+        font-size: 32px
+        margin-bottom: 30px
+    &__main-text
+        font-size: 24px
+        width: 85%
+        margin-bottom: 15px
+    &__p
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0px
+.footer
+    // height: 143px
+    background-color: $gray
+    &__container
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-flow: column
+        padding: 25px
+    &__text
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 15px
+    &__right-text
+        width: 352px
+        height: 30px
+        left: 938px
+        bottom: 62px
+        font-family: 'Mplus 1p Bold'
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        text-align: right
+        color: $white
+    &__left-text
+        width: 296px
+        height: 39.45px
+        left: 157px
+        bottom: 56.55px
+        font-family: 'Mplus 1p Bold'
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        color: $white
+    &__counter
+        align-self: flex-start
+body
+    background-color: $background-color
+
+
+.nav-block
+    margin-bottom: 40px
+    p
+        font-weight: 700
+    a
+        font-weight: 400
+        text-decoration: none
+        color: $black
+    &__nav-text-line
+        display: flex
+        flex-direction: row
+    &__circle-icon
+        margin-right: 4px
+    &__line
+        width: 100%
+        border: center 0.001mm solid #CCCCCC
+
+.info-section
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 28px
+    display: flex
+    align-items: center
+    &__theme
+        font-weight: 600
+        font-size: 32px
+        line-height: 38px
+        text-align: center
+        margin-bottom: 36px
+    &__sub-theme
+        font-weight: 500
+        margin-top: 26px
+        margin-left: 2em
+        margin-bottom: 10px
+    &__theme-line
+        width: 174px
+        border: 2px solid $green
+    &__elements
+        width: 774px
+        margin-bottom: 60px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        font-weight: 400
+        h2
+            font-size: 26px
+            margin-bottom: 8px
+            font-weight: 500
+        ol
+            list-style-type: disc
+            list-style-position: outside
+            li
+                margin-bottom: 6px
+                margin-left: 2em
+                &:last-child
+                    margin-bottom: 0px
+    &__element
+        margin-bottom: 35px
+        &:last-child
+            margin-bottom: 0px
+    &__companies
+        font-weight: 400
+        width: 412px
+        height: 130px
+        margin-bottom: 118px
+        font-size: 20px
+        &_small
+            height: 50px
+            margin-bottom: 100px
+        &_medium
+            height: 300px
+        &_large
+            height: 400px
+        &_extra-large
+            height: 700px
+        &_extra-medium
+            height: 340px
+        ol
+            height: 100%
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            list-style-type: disc
+            list-style-position: outside
+            li
+                margin-left: 2em
+                margin-bottom: 8px
+                &:last-child
+                    margin-bottom: 0px
+    &__catalog
+        margin-bottom: 150px
+    &__companies-theme
+        h2
+            font-size: 28px
+            font-weight: 500
+            margin-bottom: 18px
